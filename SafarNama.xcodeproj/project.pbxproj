@@ -6,23 +6,77 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B1438472CF82FC800E1E4A0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1438462CF82FC800E1E4A0 /* FirebaseAuth */; };
+		3B1438492CF82FC800E1E4A0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1438482CF82FC800E1E4A0 /* FirebaseFirestore */; };
+		3B14384B2CF82FC800E1E4A0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3B14384A2CF82FC800E1E4A0 /* FirebaseStorage */; };
+		3B2275052CFEAD1300253A6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2274F92CFEAD1300253A6A /* Preview Assets.xcassets */; };
+		3B2275062CFEAD1300253A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2274FB2CFEAD1300253A6A /* Assets.xcassets */; };
+		3B2275072CFEAD1300253A6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2275002CFEAD1300253A6A /* GoogleService-Info.plist */; };
+		3B22750D2CFEAD1300253A6A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2275022CFEAD1300253A6A /* LoginView.swift */; };
+		3B22750E2CFEAD1300253A6A /* SafarNamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2275032CFEAD1300253A6A /* SafarNamaApp.swift */; };
+		3B3D57172D00054F00EB0B47 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D570D2D00054F00EB0B47 /* Category.swift */; };
+		3B3D57192D00054F00EB0B47 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D570F2D00054F00EB0B47 /* CategoryListView.swift */; };
+		3B3D571B2D00054F00EB0B47 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57122D00054F00EB0B47 /* City.swift */; };
+		3B3D571C2D00054F00EB0B47 /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57132D00054F00EB0B47 /* CityDetailView.swift */; };
+		3B3D571D2D00054F00EB0B47 /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57142D00054F00EB0B47 /* CityListView.swift */; };
+		3B3D571E2D00054F00EB0B47 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57152D00054F00EB0B47 /* CityViewModel.swift */; };
+		3B3D57212D0005BE00EB0B47 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57202D0005BE00EB0B47 /* Food.swift */; };
+		3B3D57232D001E7100EB0B47 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57222D001E7100EB0B47 /* FoodDetailView.swift */; };
+		3B3D57252D002D9400EB0B47 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57242D002D9400EB0B47 /* FoodViewModel.swift */; };
+		3B3D57272D002DD400EB0B47 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57262D002DD400EB0B47 /* FoodListView.swift */; };
+		3B3D573F2D0169BF00EB0B47 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D573E2D0169BE00EB0B47 /* Shop.swift */; };
+		3B3D57412D016CB200EB0B47 /* ShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57402D016CB200EB0B47 /* ShopListView.swift */; };
+		3B3D57432D016D9C00EB0B47 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57422D016D9C00EB0B47 /* ShopDetailView.swift */; };
+		3B3D57452D016F7300EB0B47 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57442D016F7300EB0B47 /* ShopViewModel.swift */; };
+		3B3D57482D0170F800EB0B47 /* ThingToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57472D0170F800EB0B47 /* ThingToDo.swift */; };
+		3B3D574A2D01716400EB0B47 /* ThingsToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D57492D01716400EB0B47 /* ThingsToDoListView.swift */; };
+		3B3D574C2D01724900EB0B47 /* TTDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D574B2D01724900EB0B47 /* TTDetailView.swift */; };
+		3B3D574E2D0174EF00EB0B47 /* TTDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D574D2D0174EF00EB0B47 /* TTDViewModel.swift */; };
+		3BFD5FCA2D02DB4700DEE0FE /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD5FC92D02DB4700DEE0FE /* PhotoView.swift */; };
+		3BFD5FCC2D02E91400DEE0FE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD5FCB2D02E91400DEE0FE /* Photo.swift */; };
+		3BFD5FCE2D02E9A900DEE0FE /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD5FCD2D02E9A900DEE0FE /* PhotoViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3B195E0F2CF59D4600BDED01 /* SafarNama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafarNama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2274F92CFEAD1300253A6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B2274FB2CFEAD1300253A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B2275002CFEAD1300253A6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B2275012CFEAD1300253A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2275022CFEAD1300253A6A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B2275032CFEAD1300253A6A /* SafarNamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafarNamaApp.swift; sourceTree = "<group>"; };
+		3B3D570D2D00054F00EB0B47 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3B3D570F2D00054F00EB0B47 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		3B3D57122D00054F00EB0B47 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		3B3D57132D00054F00EB0B47 /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
+		3B3D57142D00054F00EB0B47 /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
+		3B3D57152D00054F00EB0B47 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		3B3D57202D0005BE00EB0B47 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		3B3D57222D001E7100EB0B47 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		3B3D57242D002D9400EB0B47 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		3B3D57262D002DD400EB0B47 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		3B3D573E2D0169BE00EB0B47 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		3B3D57402D016CB200EB0B47 /* ShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListView.swift; sourceTree = "<group>"; };
+		3B3D57422D016D9C00EB0B47 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
+		3B3D57442D016F7300EB0B47 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		3B3D57472D0170F800EB0B47 /* ThingToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingToDo.swift; sourceTree = "<group>"; };
+		3B3D57492D01716400EB0B47 /* ThingsToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsToDoListView.swift; sourceTree = "<group>"; };
+		3B3D574B2D01724900EB0B47 /* TTDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDetailView.swift; sourceTree = "<group>"; };
+		3B3D574D2D0174EF00EB0B47 /* TTDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTDViewModel.swift; sourceTree = "<group>"; };
+		3BFD5FC92D02DB4700DEE0FE /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		3BFD5FCB2D02E91400DEE0FE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3BFD5FCD2D02E9A900DEE0FE /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3B195E112CF59D4600BDED01 /* SafarNama */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SafarNama;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B195E0C2CF59D4600BDED01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1438472CF82FC800E1E4A0 /* FirebaseAuth in Frameworks */,
+				3B1438492CF82FC800E1E4A0 /* FirebaseFirestore in Frameworks */,
+				3B14384B2CF82FC800E1E4A0 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +86,7 @@
 		3B195E062CF59D4600BDED01 = {
 			isa = PBXGroup;
 			children = (
-				3B195E112CF59D4600BDED01 /* SafarNama */,
+				3B2275042CFEAD1300253A6A /* SafarNama */,
 				3B195E102CF59D4600BDED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +97,96 @@
 				3B195E0F2CF59D4600BDED01 /* SafarNama.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3B2274FA2CFEAD1300253A6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B2275032CFEAD1300253A6A /* SafarNamaApp.swift */,
+				3B2275022CFEAD1300253A6A /* LoginView.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B2275042CFEAD1300253A6A /* SafarNama */ = {
+			isa = PBXGroup;
+			children = (
+				3B2274FA2CFEAD1300253A6A /* Preview Content */,
+				3B3D57162D00054F00EB0B47 /* City */,
+				3B2274FB2CFEAD1300253A6A /* Assets.xcassets */,
+				3B2274F92CFEAD1300253A6A /* Preview Assets.xcassets */,
+				3B2275012CFEAD1300253A6A /* Info.plist */,
+				3B2275002CFEAD1300253A6A /* GoogleService-Info.plist */,
+			);
+			path = SafarNama;
+			sourceTree = "<group>";
+		};
+		3B3D57112D00054F00EB0B47 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D570D2D00054F00EB0B47 /* Category.swift */,
+				3B3D570F2D00054F00EB0B47 /* CategoryListView.swift */,
+				3B3D571F2D00057C00EB0B47 /* Food */,
+				3B3D573D2D01699300EB0B47 /* Shop */,
+				3BFD5FC42D02C97C00DEE0FE /* Photo */,
+				3B3D57462D0170AB00EB0B47 /* Things to do */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3B3D57162D00054F00EB0B47 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D57122D00054F00EB0B47 /* City.swift */,
+				3B3D57142D00054F00EB0B47 /* CityListView.swift */,
+				3B3D57132D00054F00EB0B47 /* CityDetailView.swift */,
+				3B3D57152D00054F00EB0B47 /* CityViewModel.swift */,
+				3B3D57112D00054F00EB0B47 /* Category */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		3B3D571F2D00057C00EB0B47 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D57202D0005BE00EB0B47 /* Food.swift */,
+				3B3D57262D002DD400EB0B47 /* FoodListView.swift */,
+				3B3D57222D001E7100EB0B47 /* FoodDetailView.swift */,
+				3B3D57242D002D9400EB0B47 /* FoodViewModel.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		3B3D573D2D01699300EB0B47 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D573E2D0169BE00EB0B47 /* Shop.swift */,
+				3B3D57402D016CB200EB0B47 /* ShopListView.swift */,
+				3B3D57422D016D9C00EB0B47 /* ShopDetailView.swift */,
+				3B3D57442D016F7300EB0B47 /* ShopViewModel.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		3B3D57462D0170AB00EB0B47 /* Things to do */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D57472D0170F800EB0B47 /* ThingToDo.swift */,
+				3B3D57492D01716400EB0B47 /* ThingsToDoListView.swift */,
+				3B3D574B2D01724900EB0B47 /* TTDetailView.swift */,
+				3B3D574D2D0174EF00EB0B47 /* TTDViewModel.swift */,
+			);
+			path = "Things to do";
+			sourceTree = "<group>";
+		};
+		3BFD5FC42D02C97C00DEE0FE /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD5FCB2D02E91400DEE0FE /* Photo.swift */,
+				3BFD5FC92D02DB4700DEE0FE /* PhotoView.swift */,
+				3BFD5FCD2D02E9A900DEE0FE /* PhotoViewModel.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +204,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				3B195E112CF59D4600BDED01 /* SafarNama */,
-			);
 			name = SafarNama;
 			packageProductDependencies = (
+				3B1438462CF82FC800E1E4A0 /* FirebaseAuth */,
+				3B1438482CF82FC800E1E4A0 /* FirebaseFirestore */,
+				3B14384A2CF82FC800E1E4A0 /* FirebaseStorage */,
 			);
 			productName = SafarNama;
 			productReference = 3B195E0F2CF59D4600BDED01 /* SafarNama.app */;
@@ -94,6 +238,9 @@
 			);
 			mainGroup = 3B195E062CF59D4600BDED01;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3B1438452CF82DC000E1E4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3B195E102CF59D4600BDED01 /* Products */;
 			projectDirPath = "";
@@ -109,6 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2275052CFEAD1300253A6A /* Preview Assets.xcassets in Resources */,
+				3B2275062CFEAD1300253A6A /* Assets.xcassets in Resources */,
+				3B2275072CFEAD1300253A6A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +269,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3D57212D0005BE00EB0B47 /* Food.swift in Sources */,
+				3B3D57172D00054F00EB0B47 /* Category.swift in Sources */,
+				3B3D57272D002DD400EB0B47 /* FoodListView.swift in Sources */,
+				3B3D573F2D0169BF00EB0B47 /* Shop.swift in Sources */,
+				3B3D57252D002D9400EB0B47 /* FoodViewModel.swift in Sources */,
+				3BFD5FCE2D02E9A900DEE0FE /* PhotoViewModel.swift in Sources */,
+				3B3D57432D016D9C00EB0B47 /* ShopDetailView.swift in Sources */,
+				3B3D57192D00054F00EB0B47 /* CategoryListView.swift in Sources */,
+				3B3D57452D016F7300EB0B47 /* ShopViewModel.swift in Sources */,
+				3B3D57482D0170F800EB0B47 /* ThingToDo.swift in Sources */,
+				3BFD5FCA2D02DB4700DEE0FE /* PhotoView.swift in Sources */,
+				3B3D57232D001E7100EB0B47 /* FoodDetailView.swift in Sources */,
+				3B3D574C2D01724900EB0B47 /* TTDetailView.swift in Sources */,
+				3B3D571B2D00054F00EB0B47 /* City.swift in Sources */,
+				3B3D574A2D01716400EB0B47 /* ThingsToDoListView.swift in Sources */,
+				3B3D574E2D0174EF00EB0B47 /* TTDViewModel.swift in Sources */,
+				3B3D571C2D00054F00EB0B47 /* CityDetailView.swift in Sources */,
+				3B3D571D2D00054F00EB0B47 /* CityListView.swift in Sources */,
+				3B3D571E2D00054F00EB0B47 /* CityViewModel.swift in Sources */,
+				3BFD5FCC2D02E91400DEE0FE /* Photo.swift in Sources */,
+				3B22750D2CFEAD1300253A6A /* LoginView.swift in Sources */,
+				3B3D57412D016CB200EB0B47 /* ShopListView.swift in Sources */,
+				3B22750E2CFEAD1300253A6A /* SafarNamaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +428,9 @@
 				DEVELOPMENT_TEAM = NKTD28B2NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafarNama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +457,9 @@
 				DEVELOPMENT_TEAM = NKTD28B2NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafarNama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +497,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B1438452CF82DC000E1E4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B1438462CF82FC800E1E4A0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1438452CF82DC000E1E4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3B1438482CF82FC800E1E4A0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1438452CF82DC000E1E4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3B14384A2CF82FC800E1E4A0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1438452CF82DC000E1E4A0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B195E072CF59D4600BDED01 /* Project object */;
 }
