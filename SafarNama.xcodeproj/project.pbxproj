@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B9FF7D32F88044B00233579 /* Caveat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FF7D22F88044A00233579 /* Caveat-VariableFont_wght.ttf */; };
+		3B9FF7D52F88046500233579 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FF7D42F88046500233579 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
+		3B9FF7D72F88046E00233579 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FF7D62F88046E00233579 /* PlayfairDisplay-VariableFont_wght.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3B3E09292F82A7AF0058CCF7 /* SafarNama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafarNama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9FF7D22F88044A00233579 /* Caveat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3B9FF7D42F88046500233579 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		3B9FF7D62F88046E00233579 /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3B9FF7D92F880AF000233579 /* Exceptions for "SafarNama" folder in "SafarNama" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3B3E09282F82A7AF0058CCF7 /* SafarNama */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B3E092B2F82A7AF0058CCF7 /* SafarNama */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3B9FF7D92F880AF000233579 /* Exceptions for "SafarNama" folder in "SafarNama" target */,
+			);
 			path = SafarNama;
 			sourceTree = "<group>";
 		};
@@ -34,6 +56,9 @@
 			children = (
 				3B3E092B2F82A7AF0058CCF7 /* SafarNama */,
 				3B3E092A2F82A7AF0058CCF7 /* Products */,
+				3B9FF7D22F88044A00233579 /* Caveat-VariableFont_wght.ttf */,
+				3B9FF7D42F88046500233579 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+				3B9FF7D62F88046E00233579 /* PlayfairDisplay-VariableFont_wght.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9FF7D52F88046500233579 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */,
+				3B9FF7D72F88046E00233579 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */,
+				3B9FF7D32F88044B00233579 /* Caveat-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +280,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = NKTD28B2NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafarNama/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Safarnama uses your camera to capture photos for your travel entries";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Safarnama uses your location to help you log the exact place you're visiting so you can find it on your map later";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Safarnama uses your photo library to add photos to your travel entries and city cover photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,10 +317,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = NKTD28B2NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafarNama/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Safarnama uses your camera to capture photos for your travel entries";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Safarnama uses your location to help you log the exact place you're visiting so you can find it on your map later";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Safarnama uses your photo library to add photos to your travel entries and city cover photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

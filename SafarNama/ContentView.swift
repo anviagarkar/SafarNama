@@ -1,55 +1,44 @@
-//
-//  ContentView.swift
-//  SafarNama
-//
-//  Created by Anvi Agarkar on 05/04/2026.
-//
-
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @StateObject private var authViewModel = AuthViewModel()
+    // TEMPORARY — testing SyncStatus. Safe to delete once confirmed working.
+    @ObservedObject private var syncStatus = SyncStatus.shared
+    // Referencing .shared here is what starts the monitor at launch —
+    // it needs to live somewhere that stays alive for the whole app.
+    @ObservedObject private var networkMonitor = NetworkMonitor.shared
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        Group {
+            if authViewModel.isLoggedIn {
+                if authViewModel.justSignedUp {
+                    OnboardingView(hasSeenOnboarding: Binding(
+                        get: { !authViewModel.justSignedUp },
+                        set: { seen in authViewModel.justSignedUp = !seen }
+                    ))
+                } else {
+                    HomeView(authViewModel: authViewModel)
                 }
-                .onDelete(perform: deleteItems)
+            } else {
+                LoginView(authViewModel: authViewModel)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+        // TEMPORARY — testing SyncStatus. Safe to delete once confirmed working.
+        .overlay(alignment: .top) {
+            if syncStatus.isSyncing {
+                Text("Syncing…")
+                    .font(.caption)
+                    .padding(6)
+                    .background(.ultraThinMaterial, in: Capsule())
+            } else if syncStatus.lastError != nil {
+                // Your edit is already saved locally regardless of this —
+                // this just means it hasn't reached the backend yet. Worded
+                // (and colored) to say that, rather than implying data loss.
+                Text("Saved locally — will sync when online")
+                    .font(.caption)
+                    .foregroundStyle(.white)
+                    .padding(6)
+                    .background(Color.orange, in: Capsule())
             }
         }
     }
@@ -57,5 +46,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
