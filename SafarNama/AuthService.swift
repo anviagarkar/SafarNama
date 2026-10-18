@@ -33,7 +33,7 @@ enum AuthError: Error {
 }
 
 class AuthService {
-    static let baseURL = "https://safarnama-backend-71sf.onrender.com"
+    static let baseURL = APIConfig.baseURL
 
     static func signup(email: String, password: String, name: String) async throws {
         guard let url = URL(string: "\(baseURL)/auth/signup") else {

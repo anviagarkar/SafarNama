@@ -30,7 +30,7 @@ final class SyncStatus: ObservableObject {
 }
 
 class SyncService {
-    static let baseURL = "https://safarnama-backend.onrender.com"
+    static let baseURL = APIConfig.baseURL
 
     // Custom encoder/decoder so Date fields survive the Swift <-> Java round trip.
     //
